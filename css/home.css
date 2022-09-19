@@ -1,0 +1,81 @@
+/*centralização da pagina*/
+#principal{
+    width: 960px;
+    margin: auto;
+    background: white;
+}
+/*estilização da barra guia superior*/
+#home{
+    background-color:rgba(255, 255, 255, 0.774);
+    margin: auto;
+    text-align: center ;
+    width: 500px;
+    padding: 10px;
+}
+/*modificação de escritas*/
+#escrita{
+    color: black; 
+    font-size: 20px; 
+    margin: auto;
+    text-align: center ;
+}
+/*modificação de um titulo*/
+#titulos{
+    text-align: center;
+    margin: auto;
+    color: black; 
+    font-size: 30px;
+}
+/*modificação de uma escrita*/
+#procura{
+    color: black;
+    text-indent: 30px;
+    text-transform: uppercase;
+}
+/*modificação da fonte de texte da pagina*/
+body{
+    font-family: Helvetica, sans-serif;
+}
+/*modificação da tabela*/
+table {
+    border-collapse: collapse;
+    background-color: chartreuse;
+
+  }
+  /*modificação da borda da tabela*/
+table, tr, td {
+    border: 2px solid black;
+    font-size: 20px;
+    text-align: right;
+  }
+  /*modificação do conteudo dentro da tabela*/
+td,a {
+    height: 50px;
+    vertical-align: bottom;
+    color: rgb(49, 14, 245);
+  }
+
+/*modificação da lista*/
+li{
+    margin-right: 10px;
+    padding-top: 25px;
+    background: yellow;
+}
+/*modificação das escritas dentro do <a>*/
+a{
+    font-size: 18px;
+    text-decoration: none;
+}
+/*decoração ao passar o mouse nas escritas dentro do <a>*/
+a:hover{
+    text-decoration: underline;
+}
+/*realocação da posição da lista na pagina*/
+#sidebar{
+    float: right;
+    list-style: none;
+}
+/*realocação do titulo*/
+h3{
+    padding-right: 10px;
+}

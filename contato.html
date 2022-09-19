@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" type="text/css" href="css/contato.css">
+    <!-- Função checa: exibir mensagem obrigatoria caso o usuario não escreva quando clicar nos quadrados de resposta
+        Funcao1: aparece uma caixa de mensagem ao enviar o formulario
+    -->
+    <script language="Javascript">
+        function checa(){
+        d = document.getElementById("ctn");
+        campo = document.getElementById("abc");
+        if (campo.value=="")
+            d.innerText="Este campo é obrigatório";
+            else
+            d.innerText=" ";
+        }
+
+        function checa2(){
+        d = document.getElementById("ctn2");
+        campo = document.getElementById("abc2");
+        if (campo.value=="")
+            d.innerText="Este campo é obrigatório";
+            else
+            d.innerText=" ";
+        }
+
+        function funcao1(){
+            cmpo1 = document.getElementById("abc");
+            cmpo2 = document.getElementById("abc2");
+            cmpo3 = document.getElementById("msg");
+            if(cmpo1.value==false || cmpo2.value==false || cmpo3.value == false){
+                alert("Campos são obrigatórios");
+            }
+            else{
+                alert("Mensagem enviada!");
+            }
+            
+        }
+
+    </script>
+</head>
+<body >
+        <!-- Nome: Rafael Cassaro Costa
+        Código de matricula: 834706
+     -->
+
+     <!--barra guia superior do site, mais centralização da pagina pelo css_id:Principal-->    
+    <div id="home"><a href="file:///C:/Users/rafael/Desktop/parciall/tela_home.html#">HOME | </a>
+        <a href="file:///C:/Users/rafael/Desktop/parciall/tela_escolhas.html">DEUSES | </a>
+        <a href="file:///C:/Users/rafael/Desktop/parciall/tela_escolhas_semideuses.html">SEMI-DEUSES | </a>
+        <a href="file:///C:/Users/rafael/Desktop/parciall/contato.html?nome=5&sobrenome=85">CONTATO</a></div></p>
+        <div id="principal">
+        <h1>Entre em contato conosco</h1><hr>
+        E-mail para contato: xxxxxxxxx@xxx.xx
+        <h2>Nos mande uma mensagem para melhorar o site</h2><hr>
+
+        <!--menu para enviar a mensagem, feito com javascript -->
+        <form name=form1>
+            <pre>
+Nome:   <input name="nome" id="abc" required="true" onblur="checa()" type="text"><div style="color: red; display: inline;" id="ctn"></div>
+E-mail: <input name="sobrenome" required="true"  type="text"id="abc2" onblur="checa2()"><div style="color: red; display: inline;" id="ctn2"></div>
+            </pre> 
+            
+            <label for="msg">Mensagem:</label><p>
+            <textarea id="msg" rows="5" cols="33" required="true"   ></textarea>
+            <p>
+            <input type="submit" onclick="funcao1()">
+                <hr>
+                
+            </form>
+    </div>
+</body>
+</html>
